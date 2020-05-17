@@ -39,5 +39,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <audio controls id="audio">
+      <source src="./song.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      document.addEventListener("scroll", () => {
+        var audio = document.getElementById('audio');
+        audio.play();
+      })
+    </script>
   </body>
 </html>
